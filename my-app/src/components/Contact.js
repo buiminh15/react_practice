@@ -1,10 +1,11 @@
 import React from 'react'
+import Treko from '../hoc/Treko';
 
 const Contact = (props) => {
-  setTimeout(()=> {
-    props.history.push('/about')
-  }, 2000)
-    console.log(props)
+  // setTimeout(()=> {
+  //   props.history.push('/about')
+  // }, 2000)
+    // console.log(props)
     return (
       <div className="container">
         <h4 className="center">Contact</h4>
@@ -15,4 +16,4 @@ const Contact = (props) => {
     );
 }
 
-export default Contact
+export default Treko(Contact);
